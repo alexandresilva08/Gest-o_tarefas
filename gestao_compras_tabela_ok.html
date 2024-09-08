@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Compras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Referência ao CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <h1><i class="fas fa-shopping-cart"></i> Gestão de Compras</h1>
+</header>
+
+<div class="container">
+    <div id="app">
+        <h2><i class="fas fa-plus"></i> Adicionar Compras</h2>
+        <input type="text" id="item" placeholder="Nome da compra" required>
+        <input type="date" id="date" required>
+        <input type="number" id="value" placeholder="Valor do Produto" required>
+        <select id="status">
+            <option value="Não Efetuada">Não Efetuada</option>
+            <option value="Efetuada">Efetuada</option>
+            <option value="Futura">Futura</option>
+        </select>
+        <button id="add-btn"><i class="fas fa-plus"></i> Adicionar Compra</button>
+        <button id="view-btn"><i class="fas fa-list"></i> Ver Compras</button>
+    </div>
+
+    <div id="compras" style="display: none;">
+        <h2><i class="fas fa-list-alt"></i> Lista de Compras</h2>
+        
+        <h3>Não Efetuadas</h3>
+        <ul id="lista-nao-efetuadas"></ul>
+
+        <h3>Efetuadas</h3>
+        <ul id="lista-efetuadas"></ul>
+
+        <h3>Futuras</h3>
+        <ul id="lista-futuras"></ul>
+
+        <button id="back-btn"><i class="fas fa-arrow-left"></i> Voltar</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Gestão de Compras. Todos os direitos reservados.</p>
+    <p>
+        <a href="#">Política de Privacidade</a> | 
+        <a href="#">Termos de Serviço</a>
+    </p>
+</footer>
+
+<script src="script.js"></script> <!-- Referência ao JavaScript -->
+
+</body>
+</html>
